@@ -3,3 +3,212 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ACACAC;
+    --accent-color: #007BFF;
+    --main-title-size: 100px;
+    --sub-header-size: 80px;
+    --standard-font-size: 20px;
+}
+
+@font-face {
+    font-family: 'SF UI Display Semibold';
+    src: url('/assets/fonts/sf-ui-display-semibold-58646eddcae92.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SF UI Display Medium';
+    src: url('/assets/fonts/sf-ui-display-medium-58646be638f96.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Instrument Serif Regular';
+    src: url('/assets/fonts/InstrumentSerif-Regular.ttf') format('truetype');
+}
+
+body {
+    background-image: url(/assets/images/texture.png);
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    margin: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.logo a {
+    font-family: 'Instrument Serif Regular';
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+.right-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 20px;
+}
+
+.work-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.work-status p {
+    font-family: 'SF UI Display Medium';
+    font-size: var(--standard-font-size);
+    color: var(--primary-color);
+}
+
+.green {
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    background-color: #24D00A;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.dnd:hover {
+    cursor: pointer;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.location p {
+    font-family: 'SF UI Display Medium';
+    color: var(--secondary-color);
+    font-size: var(--standard-font-size);
+}
+
+.greetings h1 {
+    font-family: 'Instrument Serif Regular';
+    font-weight: normal;
+    font-size: 50px;
+}
+
+.job-title {
+    margin-bottom: 40px;
+}
+
+.job-title h1 {
+    font-family: 'SF UI Display Semibold';
+    font-size: 100px;
+    line-height: 80px;
+}
+
+.bio {
+    margin-bottom: 40px;
+}
+
+.bio p {
+    font-family: 'SF UI Display Medium';
+    font-size: var(--standard-font-size);
+}
+
+#get-in-touch {
+    font-family: 'SF UI Display Medium';
+    font-size: var(--standard-font-size);
+    background-color: var(--accent-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 15px 60px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
+}
+
+#get-in-touch:hover {
+    background-color: #004793;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
+}
+
+/*------------ RESPONSIVE ------------*/
+
+@media (max-width: 600px) {
+    .navbar {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .logo a {
+        font-size: 22px;
+    }
+
+    .work-status {
+        padding: 0 20px;
+    }
+
+    .work-status p {
+        font-size: 15px;
+    }
+
+    .green {
+        width: 15px;
+        height: 10px;
+    }
+
+    .dnd,
+    .menu {
+        width: 35px;
+        height: 35px;
+    }
+
+    .greetings h1 {
+        font-size: 40px;
+    }
+
+    .job-title h1 {
+        font-size: 65px;
+        line-height: 55px;
+    }
+
+    #get-in-touch {
+        font-size: 16px;
+    }
+}
