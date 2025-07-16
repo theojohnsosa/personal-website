@@ -73,7 +73,6 @@ body {
 
 .right-nav p {
     font-family: 'SF UI Display Medium';
-    margin-right: 18px;
 }
 
 .hero-section {
@@ -130,4 +129,51 @@ body {
 
 #contact-button:hover {
     background-color: #004793;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        margin: 30px 0;
+    }
+
+    .left-nav {
+        margin: 0;
+    }
+
+    .left-nav a {
+        font-size: 20px;
+        margin-right: 60px;
+    }
+
+    .right-nav {
+        margin: 0;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .right-nav p {
+        font-size: 13px;
+    }
+
+    .dnd,
+    .menu {
+        width: 35px;
+        height: 35px;
+    }
+
+    .hero-section {
+        margin-top: 100px;
+    }
+
+    .hero-section h3 {
+        font-size: 30px;
+    }
+
+    .hero-section h1 {
+        font-size: 70px;
+        line-height: 60px;
+    }
 }
