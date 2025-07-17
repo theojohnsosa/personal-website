@@ -43,8 +43,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .left-nav {
@@ -163,10 +162,77 @@ body {
 .about-section p {
     font-family: var(--main-font-medium);
     font-size: 16px;
+    margin-bottom: 180px;
 }
 
 .highlight {
     color: var(--accent-color);
+}
+
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-section h1 {
+    font-family: var(--main-font-semibold);
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.exp {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 70%;
+}
+
+.exp-num {
+    font-family: var(--main-font-semibold);
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.exp-text {
+    font-family: var(--main-font-medium);
+    margin-right: 455.3px;
+}
+
+.designation {
+    color: var(--secondary-color);
+}
+
+.time-period {
+    font-family: var(--main-font-medium);
+}
+
+.divider {
+    background-color: var(--primary-color);
+    width: 70%;
+    height: 2px;
+    margin: 20px 0;
+}
+
+.exp-1,
+.exp-3 {
+    margin-right: 517px;
+}
+
+#resume-button {
+    font-family: var(--main-font-medium);
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    padding: 15px 25px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
+}
+
+#resume-button:hover {
+    background-color: #004793;
 }
 
 @media (max-width: 600px) {
@@ -235,5 +301,36 @@ body {
 
     .about-section h6 {
         font-size: 23px;
+    }
+
+    .experience-section {
+        width: 100vw;
+    }
+
+    .experience-section h1 {
+        font-size: 50px;
+    }
+
+    .exp {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .exp-num {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    .exp-text {
+        font-size: 15px;
+        margin: 0 5px 15px 0;
+    }
+
+    .time-period {
+        margin-bottom: 20px;
+    }
+
+    #resume-button {
+        font-size: 15px;
     }
 }
