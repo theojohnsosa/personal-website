@@ -22,6 +22,7 @@
 :root {
     --primary-color: #000000;
     --secondary-color: #ACACAC;
+    --tertiary-color: #F0F0F0;
     --accent-color: #007BFF;
     --main-title-size: 100px;
     --sub-header-size: 80px;
@@ -36,7 +37,7 @@ body {
     background-size: cover;
     background-repeat: repeat;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .navbar {
@@ -350,6 +351,67 @@ body {
 
 #works-button:hover {
     background-color: #004793;
+}
+
+.tech-stack-section {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-stack-section h1 {
+    font-family: var(--main-font-semibold);
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.tech-stack-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+    width: 85%;
+    gap: 20px 20px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-color);
+    border-radius: 13px;
+    padding: 5px 30px 5px 5px;
+    gap: 10px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
+}
+
+.card-2 {
+    padding: 5px 90px 5px 5px;
+}
+
+.card-3 {
+    padding: 5px 86px 5px 5px;
+}
+
+.card-4 {
+    padding: 5px 80px 5px 5px;
+}
+
+.card-5 {
+    padding: 5px 85px 5px 5px;
+}
+
+.card-6 {
+    padding: 5px 110px 5px 5px;
+}
+
+.card p {
+    font-family: var(--main-font-medium);
 }
 
 @media (max-width: 600px) {
