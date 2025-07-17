@@ -126,9 +126,10 @@ body {
     color: #FFFFFF;
     background-color: var(--accent-color);
     padding: 15px 48px;
-    border: 1px solid var(--primary-color);
+    border: none;
     border-radius: 10px;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
+    transition: 0.3s ease-in-out;
 }
 
 #contact-button:hover {
@@ -226,12 +227,128 @@ body {
     color: #FFFFFF;
     background-color: var(--accent-color);
     padding: 15px 25px;
-    border: 1px solid var(--primary-color);
+    border: none;
     border-radius: 10px;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
+    transition: 0.3s ease-in-out;
 }
 
 #resume-button:hover {
+    background-color: #004793;
+}
+
+.recent-works-section {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent-works-section h1 {
+    font-family: var(--main-font-semibold);
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.mockups {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.mockup-container {
+    width: 570px;
+    height: auto;
+    margin: 0 7px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
+}
+
+.mockup-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+}
+
+.mockup-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    padding: 30px;
+    text-align: center;
+}
+
+.mockup-container:hover .mockup-overlay {
+    opacity: 1;
+}
+
+.mockup-overlay h2 {
+    font-family: var(--main-font-semibold);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.mockup-overlay p {
+    font-family: var(--main-font-medium);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.mockup-overlay button {
+    font-family: var(--main-font-medium);
+    font-size: 1rem;
+    color: #fff;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 28px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: background 0.2s;
+}
+
+.mockup-overlay button:hover {
+    background: #004793;
+}
+
+.marquee,
+.polaris  {
+    border-radius: 10px;
+    border: none;
+}
+
+#works-button {
+    font-family: var(--main-font-medium);
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
+    transition: 0.3s ease-in-out;
+}
+
+#works-button:hover {
     background-color: #004793;
 }
 
@@ -332,5 +449,63 @@ body {
 
     #resume-button {
         font-size: 15px;
+    }
+
+    .recent-works-section {
+        margin-top: 80px;
+    }
+    
+    .recent-works-section h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .mockups {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .mockup-container {
+        width: 95vw;
+        max-width: 98vw;
+        border-radius: 10px;
+    }
+
+    .mockup-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .mockup-overlay h2 {
+        font-size: 1.2rem;
+    }
+
+    .mockup-overlay p {
+        font-size: 13px;
+    }
+    
+    .mockup-overlay button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    #works-button {
+        margin: 0 auto 30px auto;
+        font-size: 15px;
+    }
+
+    .recent-works-section {
+        margin-top: 60px;
+        padding: 0 10px;
+    }
+    .mockups {
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    .mockup-container {
+        margin: 0 auto;
+        margin-bottom: 0;
     }
 }
