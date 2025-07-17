@@ -235,6 +235,52 @@ body {
     background-color: #004793;
 }
 
+.recent-works-section {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent-works-section h1 {
+    font-family: var(--main-font-semibold);
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.mockups {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 40px;
+}
+
+.mockups img {
+    width: 575px;
+    height: auto;
+    background: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
+}
+
+#works-button {
+    font-family: var(--main-font-medium);
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    padding: 15px 25px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
+}
+
+#works-button:hover {
+    background-color: #004793;
+}
+
 @media (max-width: 600px) {
     .navbar {
         margin: 20px 0;
