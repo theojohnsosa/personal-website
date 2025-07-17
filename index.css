@@ -373,9 +373,8 @@ body {
     grid-template-rows: repeat(2, auto);
     justify-items: center;
     align-items: center;
-    width: 85%;
-    gap: 20px 20px;
-    
+    width: 80%;
+    gap: 35px;
 }
 
 .card {
