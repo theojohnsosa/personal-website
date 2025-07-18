@@ -509,7 +509,8 @@ body {
 
 .testimonial-page.active {
     border: 2px solid var(--primary-color);
-    background: var(--secondary-color);
+    background: var(--accent-color);
+    color: #FFFFFF;
     font-weight: bold;
 }
 
