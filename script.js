@@ -30,6 +30,7 @@ const testimonials = [
         avatar: '/assets/images/dnd.png',
     },
 ];
+
 let currentTestimonial = 0;
 function renderTestimonial(idx) {
     const t = testimonials[idx];
@@ -44,6 +45,7 @@ function renderTestimonial(idx) {
         </div>
     `;
 }
+
 function renderPagination() {
     const pag = document.getElementById('testimonial-pagination');
     let html = '';
@@ -73,11 +75,12 @@ function renderPagination() {
         };
     });
 }
+
 function updateTestimonial() {
     renderTestimonial(currentTestimonial);
     renderPagination();
 }
-// Wait for DOM to be ready
+
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', updateTestimonial);
 } else {
