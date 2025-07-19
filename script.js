@@ -18,15 +18,15 @@ const testimonials = [
         avatar: '/assets/images/dnd.png',
     },
     {
-        text: `Theo's attention to detail and willingness to learn set him apart. He takes ownership of his work and is always looking for ways to make things better. He's a great communicator and a reliable teammate.`,
+        text: `Having known Mr. Sosa for nearly a year as a peer, I can attest to his exceptional work ethic. He consistently strives for improvement, eagerly learns new fields, and welcomes criticism to gain fresh perspectives. Mr. Sosa is highly meticulous, particular with details, and ensures functionality in his work. He's a continuous learner who embraces new concepts and isn't afraid to ask questions to hone his skills. I sincerely believe he will achieve great things and be a valuable asset to any team.`,
         name: 'Gab Baluyot',
         title: 'IT College Student',
         avatar: '/assets/images/dnd.png',
     },
     {
-        text: `I've seen Theo grow from a curious student to a confident developer. He doesn't shy away from challenges and always delivers quality work. Any team would benefit from his drive and dedication.`,
-        name: 'Mark Lim',
-        title: 'Software Engineer',
+        text: `I was classmates with Mr. Sosa during our Senior High School years under the strand: IT in Mobile App and Web Development. As our block president, I saw how critical he is when it comes to web design, always eager to make every detail perfect, and neat as possible. During our IT Expo, he led his group with dedication and produced impressively neat and professional-looking UIs that stood out among the projects. I believe his attention to detail and leadership skills make him a valuable asset to any team or project.`,
+        name: 'Gidion Marquez',
+        title: 'Statistics Major',
         avatar: '/assets/images/dnd.png',
     },
 ];
