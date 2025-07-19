@@ -522,10 +522,7 @@ body {
 }
 
 .contact-container {
-    position: absolute;
-    top: 520%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 50px;
     width: 100%;
 }
 
@@ -535,7 +532,7 @@ body {
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    width: 90%;
+    width: 95%;
 }
 
 .email-container p {
@@ -571,7 +568,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
-    width: 90%;
+    width: 95%;
     gap: 15px;
 }
 
@@ -794,5 +791,27 @@ body {
         font-size: 15px;
         gap: 5px;
         margin-top: 14px;
+    }
+
+    .contact-section {
+        height: 28vh;
+    }
+    
+    .email-container p {
+        font-size: 13px;
+    }
+
+    .email-container h1 {
+        font-size: 20px;
+    }
+
+    .email-container img {
+        width: 35px;
+        height: auto;
+    }
+
+    .email-text {
+        gap: 10px;
+        margin-bottom: 15px;
     }
 }
