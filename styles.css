@@ -514,6 +514,77 @@ body {
     font-weight: bold;
 }
 
+.contact-section {
+    background-color: #F0F0F0;
+    width: 100%;
+    height: 35vh;
+    margin-top: 180px;
+}
+
+.contact-container {
+    position: absolute;
+    top: 520%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.email-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.email-container p {
+    font-family: var(--main-font-medium);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.email-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.email-text h1 {
+    font-family: var(--main-font-semibold);
+    font-size: 60px;
+}
+
+.email-text span {
+    color: var(--secondary-color);
+}
+
+.email-text img:hover {
+    cursor: pointer;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    gap: 15px;
+}
+
+.contact-icons img:hover {
+    cursor: pointer;
+}
+
+.footer-divider {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 2px;
+}
+
 @media (max-width: 600px) {
     .navbar {
         margin: 20px 0;
