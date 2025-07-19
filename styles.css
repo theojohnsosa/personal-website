@@ -169,6 +169,11 @@ body {
 
 .highlight {
     color: var(--accent-color);
+    transition: all 0.5s;
+}
+
+.highlight:hover {
+    font-size: 35px;
 }
 
 .experience-section {
@@ -577,9 +582,132 @@ body {
 }
 
 .footer-divider {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     width: 100%;
     height: 2px;
+}
+
+.footer-container {
+    background-color: #F0F0F0;
+    width: 100%;
+    height: 30vh;
+    place-content: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    width: 89%;
+    margin: 0 auto;
+    font-family: var(--main-font-medium);
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+.footer-nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-nav div:hover {
+    cursor: pointer;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.bottom-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28rem;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filler-text {
+    font-family: var(--main-font-medium);
+    font-size: 16px;
+}
+
+.subscribe-container {
+    display: flex;
+    gap: 10px;
+}
+
+#email {
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid var(--secondary-color);
+    background-color: #FFFFFF;
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-family: var(--main-font-medium);
+}
+
+#subscribe-button {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    border: none;
+    font-family: var(--main-font-semibold);
+    font-size: 16px;
+    padding: 5px 40px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+#subscribe-button:hover {
+    background-color: #004793;
+}
+
+.right-side {
+    text-align: end;
+}
+
+.right-side p {
+    font-family: var(--main-font-medium);
+    font-size: 16px;
+}
+
+.right-side span {
+    color: var(--secondary-color);
+}
+
+.bottom-bar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 48rem;
+    padding: 15px;
+}
+
+.bottom-bar p {
+    font-family: var(--main-font-medium);
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.bottom-bar a {
+    font-family: var(--main-font-medium);
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.bottom-bar a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 @media (max-width: 600px) {
@@ -813,5 +941,54 @@ body {
     .email-text {
         gap: 10px;
         margin-bottom: 15px;
+    }
+
+    .footer-container {
+        width: 100%;
+        height: 55vh;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .bottom-area {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .subscribe-container {
+        flex-direction: column;
+    }
+
+    #subscribe-button {
+        padding: 15px;
+    }
+
+    .right-side {
+        text-align: start;
+        padding-bottom: 20px;
+    }
+
+    .bottom-bar {
+        width: 100%;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .bottom-bar {
+        gap: 40px;
+        padding: 8px;
+    }
+
+    .bottom-bar p,
+    .bottom-bar a {
+        font-size: 14px;
     }
 }
