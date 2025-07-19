@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .mockups {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+            max-width: 1100px;
+        }
+
+        .mockup-container {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            display: block;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
+        }
+
+        @media (max-width: 600px) {
+            .mockups {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 0 10px;
+            }
+        }
+    </style>
+    <title>Theojohn Sosa – Frontend Developer</title>
+</head>
+<body>
+    
+    <main>
+        <div class="navbar">
+            <div class="left-nav">
+                <a href="index.html">Theojohn Sosa</a>
+            </div>
+            <div class="right-nav">
+                <div class="dot"></div>
+                <p>Available for work</p>
+                <img src="/assets/images/dnd.png" class="dnd">
+                <img src="/assets/images/menu.png" class="menu">
+            </div>
+        </div>
+        <div class="hero-section" style="margin-top: 8rem;">
+            <h1>PERSONAL<br>WORKS</h1>
+            <p class="bio">CHECK IT OUT</p>
+        </div>
+        <div class="recent-works-section" style="margin-top: 5rem;">
+            <div class="mockups">
+                <div class="mockup-container">
+                    <img src="/assets/images/marquee.png" class="marquee">
+                    <div class="mockup-overlay">
+                        <h2>MARQUEE CINEMAS</h2>
+                        <p>Streamlined POS simulation for theaters, enabling full control over tickets, movies, and concessions.</p>
+                        <button>View Project</button>
+                    </div>
+                </div>
+                <div class="mockup-container">
+                    <img src="/assets/images/polaris.png" class="polaris">
+                    <div class="mockup-overlay">
+                        <h2>POLARIS</h2>
+                        <p>Polaris is a student-built portfolio blending personal branding with peer-driven learning in a clean, intuitive format.</p>
+                        <button>View Project</button>
+                    </div>
+                </div>
+                <div class="mockup-container">
+                    <img src="/assets/images/marquee.png" class="marquee">
+                    <div class="mockup-overlay">
+                        <h2>MOTION STUDIO</h2>
+                        <p>Streamlined POS simulation for theaters, enabling full control over tickets, movies, and concessions.</p>
+                        <button>View Project</button>
+                    </div>
+                </div>
+                <div class="mockup-container">
+                    <img src="/assets/images/polaris.png" class="polaris">
+                    <div class="mockup-overlay">
+                        <h2>UNITY BANK CORPORATION</h2>
+                        <p>Polaris is a student-built portfolio blending personal branding with peer-driven learning in a clean, intuitive format.</p>
+                        <button>View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
