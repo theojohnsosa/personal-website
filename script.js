@@ -85,4 +85,37 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', updateTestimonial);
 } else {
     updateTestimonial();
-} 
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const smoothScrollTo = (target, duration = 1000) => {
+        const startY = window.scrollY;
+        const endY = target.getBoundingClientRect().top + startY;
+        const distance = endY - startY;
+        let startTime;
+
+        const animate = time => {
+            startTime ??= time;
+            const elapsed = time - startTime;
+            const t = Math.min(elapsed / duration, 1);
+            const ease = t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+            window.scrollTo(0, startY + distance * ease);
+            if (elapsed < duration) requestAnimationFrame(animate);
+        };
+        requestAnimationFrame(animate);
+    };
+
+    document.querySelectorAll('.footer-nav a').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href?.startsWith('#') && href !== '#works') {
+            link.onclick = e => {
+                e.preventDefault();
+                const target = document.getElementById(href.slice(1));
+                if (target) smoothScrollTo(target, 1000);
+            };
+        } else if (href === '#works') {
+            link.removeAttribute('href');
+            link.style.cursor = 'default';
+        }
+    });
+}); 
