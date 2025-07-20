@@ -263,6 +263,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    background: transparent;
 }
 
 .mockup-container {
@@ -279,7 +280,8 @@ body {
 .mockup-container img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
     border-radius: 10px;
     border: none;
 }
@@ -832,7 +834,8 @@ body {
 
     .mockup-container img {
         width: 100%;
-        height: auto;
+        height: 320px;
+        object-fit: cover;
         border-radius: 10px;
     }
 
