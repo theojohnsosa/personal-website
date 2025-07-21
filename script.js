@@ -88,6 +88,43 @@ if (document.readyState === 'loading') {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    const dndButton = document.querySelector('.dnd');
+    const body = document.body;
+    let isDarkMode = false;
+
+    dndButton.addEventListener('click', () => {
+        isDarkMode = !isDarkMode;
+        if (isDarkMode) {
+            body.style.backgroundImage = 'url(/assets/images/texture2.png)';
+            if (dndButton.tagName === 'IMG') {
+                dndButton.src = '/assets/images/dnd2.png';
+            }
+            document.querySelectorAll('.left-nav a, .right-nav p, .hero-section h3, .hero-section h1, .bio, .about-section h1, .about-section h6, .about-section p, .experience-section h1, .exp-num, .exp .title, .time-period, .recent-works-section h1, .tech-stack-section h1, .testimonials-section h1, .testimonial-pagination, .divider').forEach(element => {
+                element.style.color = '#FFFFFF';
+                if (element.classList.contains('divider')) {
+                    element.style.backgroundColor = '#FFFFFF';
+                }
+            });
+            document.querySelectorAll('.mockup-container img').forEach(img => {
+                img.style.border = '2px solid #ACACAC';
+            });
+        } else {
+            body.style.backgroundImage = 'url(/assets/images/texture.png)';
+            if (dndButton.tagName === 'IMG') {
+                dndButton.src = '/assets/images/dnd.png';
+            }
+            document.querySelectorAll('.left-nav a, .right-nav p, .hero-section h3, .hero-section h1, .bio, .about-section h1, .about-section h6, .about-section p, .experience-section h1, .exp-num, .exp .title, .time-period, .recent-works-section h1, .tech-stack-section h1, .testimonials-section h1, .testimonial-pagination, .divider').forEach(element => {
+                element.style.color = '';
+                if (element.classList.contains('divider')) {
+                    element.style.backgroundColor = '';
+                }
+            });
+            document.querySelectorAll('.mockup-container img').forEach(img => {
+                img.style.border = 'none';
+            });
+        }
+    });
+
     const smoothScrollTo = (target, duration = 1000) => {
         const startY = window.scrollY;
         const endY = target.getBoundingClientRect().top + startY;

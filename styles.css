@@ -67,6 +67,10 @@ body {
     gap: 1.5rem;
 }
 
+.right-nav img:hover {
+    cursor: pointer;
+}
+
 .dot {
     background-color: #24D00A;
     width: 15px;
