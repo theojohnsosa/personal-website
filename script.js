@@ -118,4 +118,27 @@ document.addEventListener('DOMContentLoaded', () => {
             link.style.cursor = 'default';
         }
     });
+
+    const contactBtn = document.getElementById('contact-button');
+    if (contactBtn) {
+        contactBtn.addEventListener('click', () => {
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                smoothScrollTo(contactSection, 1000);
+            }
+        });
+    }
+
+    const resumeBtn = document.getElementById('resume-button');
+    if (resumeBtn) {
+        resumeBtn.addEventListener('click', () => {
+            const resumeUrl = '/assets/documents/RESUME_TS.pdf';
+            const link = document.createElement('a');
+            link.href = resumeUrl;
+            link.download = 'Theojohn_Sosa_Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    }
 }); 
