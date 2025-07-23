@@ -1152,4 +1152,9 @@ body {
     .form-container textarea {
         height: 280px;
     }
+
+    .return-container a {
+        text-decoration: none;
+        color: var(--primary-color);
+    }
 }
