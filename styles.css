@@ -750,14 +750,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: blue;
+    align-items: start;
+    background-color: #F0F0F0;
     width: 50%;
+    padding: 30px 40px;
+    border-radius: 15px;
 }
 
 .form-container h1 {
     font-family: var(--main-font-semibold);
     font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.form-container p {
+    font-family: var(--main-font-medium);
+    font-size: 1rem;
+    color: var(--secondary-color);
 }
 
 @media (max-width: 600px) {
