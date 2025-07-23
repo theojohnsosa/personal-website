@@ -723,6 +723,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 50px;
+    padding-bottom: 10px;
 }
 
 .cta-section h1 {
@@ -766,7 +767,7 @@ body {
     font-family: var(--main-font-medium);
     font-size: 1rem;
     color: var(--secondary-color);
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .feedback-email,
@@ -791,15 +792,29 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     height: 40px;
-    border: none;
-}
-
-.feedback-email input {
+    border: 1px solid var(--secondary-color);
     margin-bottom: 20px;
 }
 
 .feedback-message textarea {
-    height: 150px;
+    height: 200px;
+    padding-top: 15px;
+    resize: none;
+}
+
+#form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
+    font-family: var(--main-font-semibold);
+    font-size: 1rem;
 }
 
 @media (max-width: 600px) {
