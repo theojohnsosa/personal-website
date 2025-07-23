@@ -770,6 +770,26 @@ body {
     margin-bottom: 20px;
 }
 
+.feedback-email,
+.feedback-message {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-email label,
+.feedback-message label {
+    font-family: var(--main-font-medium);
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.feedback-email input,
+.feedback-message textarea {
+    font-family: var(--main-font-medium);
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
 @media (max-width: 600px) {
     .navbar {
         margin: 20px 0;
