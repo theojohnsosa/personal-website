@@ -717,7 +717,6 @@ body {
 }
 
 .cta-section {
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -739,11 +738,10 @@ body {
 }
 
 .form {
-    background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 30px;
 }
 
 .form-container {
@@ -752,9 +750,10 @@ body {
     justify-content: center;
     align-items: start;
     background-color: #F0F0F0;
-    width: 50%;
+    width: 60%;
     padding: 30px 40px;
     border-radius: 15px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
 }
 
 .form-container h1 {
@@ -774,6 +773,7 @@ body {
 .feedback-message {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .feedback-email label,
@@ -788,6 +788,18 @@ body {
     font-family: var(--main-font-medium);
     font-size: 0.8rem;
     margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+}
+
+.feedback-email input {
+    margin-bottom: 20px;
+}
+
+.feedback-message textarea {
+    height: 150px;
 }
 
 @media (max-width: 600px) {
