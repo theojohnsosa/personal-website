@@ -754,7 +754,7 @@ body {
     width: 60%;
     padding: 30px 40px;
     border-radius: 15px;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
+    border: 1px solid var(--secondary-color);
 }
 
 .form-container h1 {
@@ -811,7 +811,7 @@ body {
     border: none;
     border-radius: 5px;
     width: 100%;
-    padding: 15px;
+    padding: 12px;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 50%);
     font-family: var(--main-font-semibold);
     font-size: 1rem;
